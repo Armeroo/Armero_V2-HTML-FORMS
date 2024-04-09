@@ -1,0 +1,337 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+ {  
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #D6D9DC
+    
+};
+
+nav
+{
+display: flex;
+padding: 10% 10%;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.top_options
+{
+    flex: 1;
+    text-align: right;
+}
+.top_optionss ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.top_options ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.top_optionss ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.top_options ul li:hover::after
+{
+    width: 100%;
+}
+
+.text-box
+{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 25px;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+}
+.hero-btn:hover{
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    transition: 1s;
+}
+
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.speaker-form {
+    background-color: #F6F7F8;
+    border:  1px solid #D6D9DC;
+    border-radius: 5px;
+
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    margin: 0 0 40px 0;
+
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.form-row input [type= 'text'],
+.form-row input[type='email'],
+.form-row select,
+.form-row textarea {
+    background-color: #ffffff;
+    border: 1px solid #D6D9DC;
+    border-radius: 5px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    
+}
+
+.form-row label {
+    margin-bottom: 15px;
+    align-items: center;
+    
+}
+
+.form-row select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    }
+
+    .form-row textarea {
+        font-family: "Helvetica", "Arial", sans-serif; font-size: 14px;
+        border: 1px solid #fffdfd; border-radius: 3px;
+        min-height: 100px; margin-bottom: 10px; padding: 7px;
+        resize: none;
+        }
+
+.form-row .instructions {
+        color: #ffffff; font-size: 14px;
+        margin-bottom: 30px; 
+        }
+
+.form-row .checkbox-label { margin-bottom: 0;
+        }
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #fcfcfc;
+    box-shadow: none;
+}
+
+.legacy-form-row {
+            border: none;
+            margin-bottom: 600px;
+        }
+        
+.legacy-form-row legend {
+            margin-bottom: 5px;
+        }
+        
+.legacy-form-row .radio- label {
+            display: block;
+            font-size: 14px;
+            padding: 0 20px 0 10px;
+        }
+        
+.legacy-form-row input [input='radio'] {
+            margin-top: 2px;
+        }
+        
+.legacy-form-row .radio-label,
+.legacy-form-row input [input='radio'] {
+            float: center;
+        }
+
+        
+
+.speaker-form-header,
+.speaker-form {
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    padding: 50px;
+    margin: 20px auto 40px; 
+    top: 100px;
+}
+
+@media only screen and (min-width: 700px) {
+    .speaker-form-header,
+    .speaker-form {
+        width: 600px;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        height: initial;
+    }
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .form-row select,
+    .form-row textarea
+     {
+        width: 250px;
+        height: initial;
+        background-color: #FFFFFF;
+        
+    }
+    .form-row label {
+        text-align: right;
+        width: 110px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+
+    .form-row .instructions {
+        margin-left: 125px; 
+    }
+
+    .form-row .checkbox-label  
+    { 
+        margin-left: 10%; width: auto;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .legacy-form-row {
+        margin-bottom: 10px;
+    }
+    .legacy-form-row legend {
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+        color: #ffffff;
+        font-size: 15px;
+    }
+    .legacy-form-row legend 
+    {
+        float: left;
+        text-align: center
+    
+    }
+
+    .drop-form {
+        position: relative; 
+        width: 95%;
+        height: 40px;
+      }
+      
+      #dropdown-button {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        right: 0px; 
+        bottom:100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        background-color:#af9080;
+        color: #fff;
+        border-radius: 6px;
+        border: none;
+        padding: 20px 15px;
+        cursor: pointer;
+      }
+      
+      #dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0; 
+        list-style: none;
+        padding: 0;
+        margin-top: 4px;
+        background-color: #967969;
+        border: 1px solid #7f7f7f;
+      }
+      
+      #dropdown-menu li {
+       padding: 1em 3em;
+       border-radius: 2px;
+       cursor: pointer;
+       margin: 1px;
+       
+      }
+      
+      #dropdown-menu li:hover {
+        background-color: #c29d78;
+      }
+      
+      .submenu {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0; 
+        z-index: 500; 
+        min-width: 100px;
+        list-style: none;
+        text-wrap: left;
+    }
+      
+      .submenu li {
+      font-size: 14px;
+        cursor: pointer;
+        background-color: #967969;
+      }
+      
+      .submenu li:hover {
+        background-color: #f0f0f0;
+      }
+
+    
+}
